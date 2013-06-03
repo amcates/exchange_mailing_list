@@ -1,0 +1,10 @@
+Simple to use app that helps generate a mailing list from an Exchange account
+
+Usage:
+
+git clone https://github.com/zenchild/Viewpoint.git
+edit Gemfile and point to local copy of Viewpoint (at time of writing master branch is what I needed)
+bundle install #install gems, in my case I'm using a local copy of viewpoint
+bundle exec bash -l #this will get you a bash session with current gems, use rvm if you want
+copy settings.yml.example to settings.yml and add your settings
+
