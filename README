@@ -7,4 +7,10 @@ edit Gemfile and point to local copy of Viewpoint (at time of writing master bra
 bundle install #install gems, in my case I'm using a local copy of viewpoint
 bundle exec bash -l #this will get you a bash session with current gems, use rvm if you want
 copy settings.yml.example to settings.yml and add your settings
+edit mailing_list.rb and set date range you want.  i goes day by day so that Exchange doesn't barf because you are trying to access too many records
+ruby mailing_list.rb
+edit cleanup.rb and filter however you want (i only wanted certain top level domains so that is what I filtered out)
+ruby cleanup.rb
+
+voila, clean_address.csv is ready to be used for a mailing list
 
